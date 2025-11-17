@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Workout Finder – ExerciseDB</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Workout Finder</h1>
+    <p>Search gym exercises by body part and name using the ExerciseDB API</p>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <form id="search-form">
+        <label>
+          Body part
+          <select id="bodypart-select">
+            <option value="">-- Choose body part --</option>
+          </select>
+        </label>
+
+        <label>
+          Search by name (optional)
+          <input
+            type="text"
+            id="name-input"
+            placeholder="e.g. push up"
+          />
+        </label>
+
+        <button type="submit">Search</button>
+        <button type="button" id="clear-btn">Clear Results</button>
+      </form>
+
+      <div id="message" class="message"></div>
+    </section>
+
+    <section id="results" class="results"></section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
